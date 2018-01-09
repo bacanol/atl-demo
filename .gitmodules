@@ -1,0 +1,15 @@
+[submodule "Bamboo-Demo"]
+	path = Bamboo-Demo
+	url = https://github.com/bacanol/bamboo-demo.git
+[submodule "Bitbucket-Demo"]
+	path = Bitbucket-Demo
+	url = https://github.com/bacanol/bitbucket-demo.git
+[submodule "Confluence-Demo"]
+	path = Confluence-Demo
+	url = https://github.com/bacanol/confluence-demo.git
+[submodule "Jira-Demo"]
+	path = Jira-Demo
+	url = https://github.com/bacanol/jira-demo.git
+[submodule "Nexus3-Demo"]
+	path = Nexus3-Demo
+	url = https://github.com/bacanol/nexus3-demo.git
