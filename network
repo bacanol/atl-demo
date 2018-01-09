@@ -1,0 +1,87 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "d1ba5c016640f0c613a6fbba9eab1d4c7f7bf80e12f629068939722a2a005c79",
+        "Created": "2018-01-05T11:28:21.530898184Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "0b9ec05d90448bb1136c80af36000d1e80f400067f0fa7869a20bea84fe7175e": {
+                "Name": "postgresql",
+                "EndpointID": "b8cd9a8274aac09f7c7b463eb525de77e25878fba0cf5623a9d6e1831dd4271d",
+                "MacAddress": "02:42:ac:11:00:02",
+                "IPv4Address": "172.17.0.2/16",
+                "IPv6Address": ""
+            },
+            "4fbd468850a9be586709811f52b100d12760f9fc9795c97ac08d1fbd4737bd6d": {
+                "Name": "jira",
+                "EndpointID": "b95d6699df4e1006b117466878bb83a31d09ffd4d09358bbdd49b231c01764cd",
+                "MacAddress": "02:42:ac:11:00:07",
+                "IPv4Address": "172.17.0.7/16",
+                "IPv6Address": ""
+            },
+            "7bd147a20e7ac43da37941a63bd43d3e4696d4a88f6781bb62b928cc9734b873": {
+                "Name": "bitbucket",
+                "EndpointID": "7f03a393db0a7e7f60a7e3c554029473bafd4f16d1bf0122d31d2f2949cd2526",
+                "MacAddress": "02:42:ac:11:00:04",
+                "IPv4Address": "172.17.0.4/16",
+                "IPv6Address": ""
+            },
+            "7d036f8870d52c40eaee63716ef9ef2349e088132acf93ee27360834de495dc6": {
+                "Name": "confluence",
+                "EndpointID": "658e4b4f7c09ca0e374aa7d6fa4e6c3a207639f0feeacd6832cee2c60fdbc5ab",
+                "MacAddress": "02:42:ac:11:00:08",
+                "IPv4Address": "172.17.0.8/16",
+                "IPv6Address": ""
+            },
+            "81ab627e301b3de49b4da7717a27e239914affe4791cb21169d817fe3697a04d": {
+                "Name": "sonaqube",
+                "EndpointID": "ae3dd05010c4ae338d50325a56a8e10880eb1d536c45e3b23c8d87cb010c5429",
+                "MacAddress": "02:42:ac:11:00:06",
+                "IPv4Address": "172.17.0.6/16",
+                "IPv6Address": ""
+            },
+            "9ca8b039796269568e5cb4eb23146b8959e3fab5318861deeb551a8e4785ed44": {
+                "Name": "bamboo",
+                "EndpointID": "e0bed2fb7872cc2a179466c2702d64f07204a0ca767b5b345790230214fb2948",
+                "MacAddress": "02:42:ac:11:00:03",
+                "IPv4Address": "172.17.0.3/16",
+                "IPv6Address": ""
+            },
+            "bbf10d0c782863bdad997d8179f5d320f98151e3ade77db9a38bc62a0c02df12": {
+                "Name": "nexus",
+                "EndpointID": "716353bf286a3c6e862757c6507acce06caaecafb721fb9909078a87d491f7be",
+                "MacAddress": "02:42:ac:11:00:05",
+                "IPv4Address": "172.17.0.5/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]
