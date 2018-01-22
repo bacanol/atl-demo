@@ -1,19 +1,19 @@
 startme() {
 	echo "Starting Atlassian demo environment in correct order..."
 	docker start postgresql
-	sleep 20s;
+	sleep 10s;
 	docker start bamboo
 	sleep 20s;
 	docker start bitbucket
-	sleep 20s;
-	docker start nexus
-	sleep 20s;
-	docker start sonaqube
-	sleep 20s;
-	docker start jira
 	sleep 30s;
+	docker start nexus
+	sleep 40s;
+	docker start sonaqube
+	sleep 50s;
+	docker start jira
+	sleep 60s;
 	docker start confluence
-	sleep 5s;
+	sleep 70s;
 	docker start tomcat
 	echo "...everything started in order."
 }
@@ -21,19 +21,19 @@ startme() {
 stopme() {
 	echo "Stopping Atlassian demo environment in correct order..."
 	docker stop bamboo
-	sleep 20s;
+	sleep 5s;
 	docker stop bitbucket
-	sleep 20s;
+	sleep 5s;
 	docker stop nexus
-	sleep 20s;
+	sleep 5s;
 	docker stop sonaqube
-	sleep 20s;
+	sleep 5s;
 	docker stop jira
-	sleep 30s;
+	sleep 5s;
 	docker stop confluence
 	sleep 5s;
 	docker stop tomcat
-	sleep 20s;
+	sleep 5s;
 	docker stop postgresql
 	echo "...everything stopped in order."
 }

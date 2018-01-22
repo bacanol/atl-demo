@@ -27,9 +27,9 @@ RUN apk add gzip tar \
 
 COPY entrypoint.sh              /entrypoint.sh
 
-ARG BITBUCKET_VERSION=5.6.2
+ARG BITBUCKET_VERSION=5.7.0
 #ARG DOWNLOAD_URL=https://downloads.atlassian.com/software/stash/downloads/atlassian-bitbucket-${BITBUCKET_VERSION}.tar.gz
-ARG DOWNLOAD_URL=http://10.0.8.38:6080/source/atlassian-bitbucket-${BITBUCKET_VERSION}.tar.gz
+ARG DOWNLOAD_URL=http://192.168.2.135:6080/source/atlassian-bitbucket-${BITBUCKET_VERSION}.tar.gz
 COPY . /tmp
 
 RUN mkdir -p                             ${BITBUCKET_INSTALL_DIR} 

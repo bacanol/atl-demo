@@ -1,0 +1,55 @@
+---
+- name: Build all Demo Applications for Docker
+  hosts: all
+  connection: local
+  gather_facts: False
+
+  tasks:
+    - name: Build PostgreSQL image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/PostgreSQL-Demo
+        dockerfile: /Users/nho/workspace/docker/PostgreSQL-Demo/Dockerfile
+        name: postgresql/postgresql-server 
+
+    - name: Build Bamboo image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Bamboo-Demo
+        dockerfile: /Users/nho/workspace/docker/Bamboo-Demo/Dockerfile
+        name: atlassian/bamboo-server 
+
+    - name: Build Bitbucket image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Bitbucket-Demo
+        dockerfile: /Users/nho/workspace/docker/Bitbucket-Demo/Dockerfile
+        name: atlassian/bitbucket-server 
+
+    - name: Build Nexus image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Nexus-Demo
+        dockerfile: /Users/nho/workspace/docker/Nexus-Demo/Dockerfile
+        name: sonatype/nexus3 
+
+    - name: Build Sonarcube image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Sonarcube-Demo
+        dockerfile: /Users/nho/workspace/docker/Sonarcube-Demo/Dockerfile
+        name: sonar/sonarqube
+
+    - name: Build Jira image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Jira-Demo
+        dockerfile: /Users/nho/workspace/docker/Jira-Demo/Dockerfile
+        name: atlassian/jira-server 
+
+    - name: Build Confluence image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Confluence-Demo
+        dockerfile: /Users/nho/workspace/docker/Confluence-Demo/Dockerfile
+        name: atlassian/confluence-server 
+    
+    - name: Build Tomcat image and with buildargs
+      docker_image:
+        path: /Users/nho/workspace/docker/Tomcat-Demo
+        dockerfile: /Users/nho/workspace/docker/Tomcat-Demo/Dockerfile
+        name: apache/tomcat-server 
+

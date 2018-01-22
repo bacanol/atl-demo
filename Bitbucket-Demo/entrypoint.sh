@@ -4,7 +4,7 @@ set -euo pipefail
 # Set recommended umask of "u=,g=w,o=rwx" (0027)
 umask 0027
 BITBUCKET_CONTEXT_PATH=/bitbucket
-sed -i "s|server.context-path="/"|server.context-path="$BITBUCKET_CONTEXT_PATH"|g" ${BITBUCKET_HOME}/shared/bitbucket.properties
+#sed -i "s|server.context-path="/"|server.context-path="$BITBUCKET_CONTEXT_PATH"|g" ${BITBUCKET_HOME}/shared/bitbucket.properties
 
 
 # Setup Catalina Opts

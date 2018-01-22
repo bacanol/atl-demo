@@ -27,9 +27,9 @@ RUN    apk add maven apache-ant nodejs \
 
 COPY entrypoint.sh              /entrypoint.sh
 
-ARG BAMBOO_VERSION=6.3.0
+ARG BAMBOO_VERSION=6.3.1
 #ARG DOWNLOAD_URL=https://downloads.atlassian.com/software/bamboo/downloads/atlassian-bamboo-${BAMBOO_VERSION}.tar.gz
-ARG DOWNLOAD_URL=http://10.0.8.38:6080/source/atlassian-bamboo-${BAMBOO_VERSION}.tar.gz
+ARG DOWNLOAD_URL=http://192.168.2.135:6080/source/atlassian-bamboo-${BAMBOO_VERSION}.tar.gz
 COPY . /tmp
 
 RUN mkdir -p                             ${BAMBOO_INSTALL_DIR} \
