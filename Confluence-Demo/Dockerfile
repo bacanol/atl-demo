@@ -26,9 +26,9 @@ RUN rm -rf /var/lib/{apt,dpkg,cache,log}/ /tmp/* /var/tmp/*
 
 COPY entrypoint.sh              /entrypoint.sh
 
-ARG CONFLUENCE_VERSION=6.6.1
-#ARG DOWNLOAD_URL=http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
-ARG DOWNLOAD_URL=http:///192.168.2.135:6080/source/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
+ARG CONFLUENCE_VERSION=6.9.0
+ARG DOWNLOAD_URL=http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
+#ARG DOWNLOAD_URL=http:///192.168.2.135:6080/source/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz
 
 COPY . /tmp
 

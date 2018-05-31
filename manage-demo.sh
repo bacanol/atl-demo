@@ -13,8 +13,8 @@ startme() {
 	docker start jira
 	sleep 60s;
 	docker start confluence
-	sleep 70s;
-	docker start tomcat
+#	sleep 70s;
+#	docker start tomcat
 	echo "...everything started in order."
 }
 
@@ -32,8 +32,8 @@ stopme() {
 	sleep 5s;
 	docker stop confluence
 	sleep 5s;
-	docker stop tomcat
-	sleep 5s;
+#	docker stop tomcat
+#	sleep 5s;
 	docker stop postgresql
 	echo "...everything stopped in order."
 }
